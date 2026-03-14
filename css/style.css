@@ -1,0 +1,1314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bodyStyle {
+    background-color: #D1B58A;
+    /* acomodar el foooter */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.activo {
+    color: #E6C595 !important;
+    background-color: #6B3A01 !important;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#header {
+    background-color: #CDAD7B;
+    width: 100%;
+    height: 190px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+}
+
+#logoCapiNav {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: max-content;
+    background-color: #E6C595;
+    border-top-right-radius: 95px;
+    border-bottom-right-radius: 95px;
+}
+
+#logoCapi {
+    height: 85%;
+    width: auto;
+    margin-top: 15px;
+}
+
+#logoTxt {
+    height: 35%;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-right: 30px;
+}
+
+a,
+ul {
+    list-style: none;
+    text-decoration: none !important;
+    color: #6B3A01 !important;
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.4s ease;
+}
+
+.accesos:hover {
+    color: #E6C595 !important;
+    background-color: #6B3A01 !important;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#accesosNavModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuIconDiv {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 24%;
+    height: 45%;
+    width: min-content;
+    max-width: 200px;
+    background-color: #E6C595;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#menuIcon {
+    display: flex;
+    font-size: 60px !important;
+    color: #6B3A01 !important;
+    cursor: pointer;
+    margin-left: 10%;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+#menuIcon:hover {
+    scale: 0.92;
+}
+
+#btnMenuIcon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#accesosNav {
+    position: absolute;
+    margin-left: 650px;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    margin-top: 60px;
+}
+
+#accesosNavMobile {
+    display: none;
+    background-color: #CDAD7B;
+    width: 100%;
+    height: max-content;
+    margin-top: 290px;
+    border-radius: 0px;
+    text-align: center;
+    align-items: center;
+}
+
+#redesNav {
+    position: absolute;
+    right: 0;
+    top: 115px;
+    display: flex;
+    width: max-content;
+    height: 75px;
+    background-color: #E6C595;
+    margin-top: 75px;
+    border-bottom-left-radius: 40px;
+}
+
+.redesSociales {
+    height: 90%;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.redesSociales:hover {
+    transform: scale(1.15);
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    /* Ajustado para que no choque con el header */
+    margin-bottom: 350px;
+    justify-content: center;
+    align-items: center;
+    /* Esto centra verticalmente el slide */
+    text-align: center;
+    padding: 20px;
+    /* Un poco de aire a los costados en celular */
+}
+
+#slideDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra contenido verticalmente */
+    align-items: center;
+    /* RESPONSIVIDAD: */
+    width: 90%;
+    /* Ocupa todo lo disponible... */
+    max-width: 570px;
+    /* ...hasta llegar a 700px */
+    height: auto;
+    /* Altura automática según el contenido */
+    padding-bottom: 40px;
+    /* Espacio para el texto de abajo */
+    background-color: #b09871be;
+    border-radius: 45px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra suave opcional */
+    margin-top: 350px;
+    margin-bottom: 350px;
+}
+
+#tituloSlide {
+    color: #6B3A01;
+    font-size: 30px !important;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 70px;
+}
+
+.imgTxt {
+    color: #6B3A01;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+}
+
+h5 {
+    color: #6B3A01 !important;
+    font-size: 30px !important;
+    font-family: 'Roboto Slab', serif;
+    padding: 7px;
+    width: max-content;
+    background-color: #CDAD7B;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #6B3A01 !important;
+    font-size: 30px !important;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    /* elimina el espacio extra por defecto */
+    padding: 5px 10px;
+    /* menos padding vertical */
+    width: max-content;
+}
+
+/* Quitamos el ancho fijo del item para que la animación sea fluida */
+.imgSlide {
+    /* Quitamos el padding gigante de 70px que achicaba mucho la foto */
+    width: 100%;
+    max-width: 650px;
+    /* Tamaño máximo de la foto en escritorio */
+    height: auto;
+    max-height: 600px;
+    /* Para que no sean eternas de alto */
+    object-fit: contain;
+    /* Asegura que se vea la foto entera */
+    margin: 0 auto;
+    /* Centrar */
+    padding: 20px;
+    /* Padding más moderado */
+    border-radius: 60px !important;
+    /* Bordes un poco redondeados a la foto */
+    padding: 70px;
+}
+
+#textoFooter {
+    color: #6B3A01;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #E6C595;
+    width: 85%;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#divCatalogo {
+    margin-top: 350px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.material-symbols-outlined {
+    color: #6B3A01 !important;
+    font-size: 50px !important;
+    cursor: default;
+}
+
+#inputSearch {
+    height: 55px;
+    width: 80%;
+    border: none;
+    border-bottom: 7px solid #6B3A01;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    color: #6B3A01;
+    font-family: 'Roboto Slab', serif;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+#inputSearch:focus {
+    outline: none !important;
+}
+
+#inputSearch::placeholder {
+    color: #6b3a0196;
+    font-size: 30px;
+    opacity: 0.85;
+}
+
+#divSearch {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+
+#divFiltrado {
+    display: flex;
+    height: min-content;
+    width: min-content;
+    background-color: #b098716c;
+    margin-top: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+.radioInpsSt {
+    display: flex;
+    border: 4px solid #6B3A01;
+    border-radius: 10px;
+    padding: 20px;
+    width: max-content;
+    height: auto;
+    color: #6B3A01;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.form-check-input {
+    outline: none !important;
+    /* Elimina el borde azul al enfocar */
+    box-shadow: none !important;
+    /* Elimina la sombra al enfocar */
+    border-color: #8B7B53 !important;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #6B3A01 !important;
+    border: 2px solid #E6C595 !important;
+}
+
+.categoriaSt {
+    border-radius: 10px;
+    height: min-content;
+    white-space: wrap;
+    margin: 0;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.categoriaSt:hover {
+    background-color: #6B3A01 !important;
+    color: #E6C595 !important;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+#btnNextCategoria {
+    margin-left: 20px;
+    padding-top: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+#btnPrevCategoria {
+    margin-right: 20px;
+    padding-top: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+#btnNextCategoria:focus,
+#btnPrevCategoria:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#iconoPrevCat {
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+#iconoPrevCat:hover {
+    scale: 1.2;
+}
+
+
+#iconoNextCat {
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+#iconoNextCat:hover {
+    scale: 1.2;
+}
+
+/* El contenedor principal de las categorías */
+#divCategorias {
+    margin-top: 100px;
+    display: flex;
+    /* Alinea los items en una fila */
+    overflow-x: auto;
+    /* Permite el scroll horizontal */
+    overflow-y: hidden;
+    /* Evita scroll vertical accidental */
+    white-space: nowrap;
+    /* Obliga a los items a quedarse en una sola línea */
+    gap: 15px;
+    /* Espacio entre cada categoría */
+    padding: 10px 5px;
+    /* Espacio para que no respire contra los bordes */
+
+    /* Mejora el scroll en móviles */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Los items individuales (links o botones) */
+.item-categoria {
+    flex: 0 0 auto;
+    /* IMPORTANTE: evita que los botones se achiquen */
+    scroll-snap-align: start;
+    /* Hace que el item "encaje" al scrollear */
+    display: inline-block;
+}
+
+/* Para Chrome, Safari y Opera */
+#divCategorias::-webkit-scrollbar {
+    display: none;
+}
+
+/* Para IE, Edge y Firefox */
+#divCategorias {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+#btnCloseModal{
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid #6B3A01;
+    padding: 15px;
+    color: #6B3A01;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+#btnCloseModal:hover {
+    background-color: #6B3A01;
+    color: #E6C595 !important;
+    border: 2px solid #6B3A01;
+}
+
+#btnViewCategorias {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    color: #E6C595;
+    background-color: #6B3A01;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#btnViewCategorias:hover {
+    transform: scale(0.95);
+}
+
+#iconCloseModal{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#iconCloseModal:hover{
+  rotate: 90deg;
+}
+
+/* css productos */
+
+.categoriaTag {
+    display: flex;
+    font-size: 18px;
+    color: #6B3A01;
+    opacity: 0.8;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.productos {
+    margin-top: 60px;
+    display: grid;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* permite que se apilen en varias filas */
+    justify-content: center;
+    padding: 30px;
+}
+
+.producto {
+    position: relative;
+    flex: 1 1 150px;
+    /* ocupa mínimo 200px y se adapta */
+    max-width: 350px;
+    height: max-content;
+    background-color: #b09871b0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    justify-items: center;
+    cursor: default;
+    transition: transform 0.3s ease;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #6B3A01;
+    font-size: 28px !important;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.producto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.descProducto {
+    width: 100%;
+    height: max-content;
+    background-color: #E6C595;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.descProducto:hover {
+    cursor: pointer !important;
+    border: 2px solid #6B3A01 !important;
+    border-top: 0px !important;
+}
+
+.descProducto:hover .iconoDescProducto {
+    cursor: pointer !important
+}
+
+/* Esto oscurece el fondo cuando el modal está abierto */
+#lightboxNativo::backdrop {
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(4px);
+}
+
+.txtDesc {
+    font-size: 20px !important;
+    padding: 15px;
+    width: 95%;
+    /* Ocupa el ancho disponible */
+
+    text-align: start !important;
+
+    /* 2. Control de apilamiento (envoltura) */
+    white-space: pre-line;
+    /* Asegura que el texto salte de línea */
+    overflow-wrap: break-word;
+    /* Rompe palabras largas si es necesario */
+    word-break: break-word;
+    /* Compatibilidad adicional */
+
+    /* 3. Opcional: Box-sizing */
+    box-sizing: border-box;
+    /* Asegura que el padding no agrande el ancho total */
+
+    display: none;
+    /* Oculto por defecto */
+
+    /* --- CAMBIOS PARA QUE FLOTE --- */
+    position: absolute;
+    /* Lo saca del flujo y deja de empujar */
+    z-index: 100;
+    /* Asegura que esté por encima de los botones */
+    left: 0;
+    /* Alineado a la izquierda del padre */
+    background-color: #E6C595;
+    /* Usa el mismo color beige de tu card */
+    border-radius: 20px;
+    /* Opcional: para que combine con las esquinas */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    /* Opcional: para dar efecto de profundidad */
+
+    /* centrado*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    margin-top: 10px;
+}
+
+.txtDesc:hover {
+    border: 1px solid #6B3A01 !important;
+}
+
+#descIconYTextoDiv {
+    display: inline-flex;
+    cursor: pointer !important
+}
+
+#btnTxtVerDesc {
+    padding-top: 8px;
+    padding-left: 15px;
+    font-size: 24px !important;
+    cursor: pointer !important;
+}
+
+.producto img {
+    left: 0;
+    width: 100%;
+    height: 365px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-top: 10px;
+}
+
+.producto img:hover {
+    cursor: zoom-in;
+}
+
+.producto p {
+    padding: 10px;
+    margin: 5px;
+    background-color: #E6C595;
+    border-radius: 10px;
+    width: max-content;
+    font-size: 24px !important;
+}
+
+.producto h2 {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 31px !important;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.btnProducto {
+    background-color: #6B3A01;
+    color: #E6C595 !important;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 10px;
+    font-size: 22px !important;
+}
+
+.btnProducto:hover {
+    transform: scale(0.93);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    background-color: #E6C595;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 130px;
+    height: 130px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.fade-slide {
+    animation: fadeSlide 0.5s ease-in-out;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#toTopIcon {
+    background-color: #6B3A01;
+    border-radius: 60%;
+    font-size: 55px !important;
+    padding: 5px;
+    cursor: pointer;
+    position: fixed;
+    color: #E6C595 !important;
+    right: 50px;
+    bottom: 150px;
+    transition: all 0.3s ease;
+}
+
+#toTopIcon:hover {
+    transform: scale(0.93);
+}
+
+.titulo-error {
+    color: #6B3A01;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+#sinResultados {
+    display: none;
+    background-color: #b0987148;
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 90%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#txtSecundarioSr {
+    color: #6B3A01;
+    font-family: 'Roboto Slab', serif;
+    font-size: larger;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #CDAD7B;
+    height: 265px;
+    display: flex;
+}
+
+#copyrightDiv {
+    margin-top: auto;
+    display: inline-flex;
+    bottom: 0;
+    left: 0;
+    width: max-content;
+    height: 65%;
+    background-color: #E6C595;
+    border-top-right-radius: 70px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+#mainDivNosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#divMainContacto {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+#divContactoRedes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #6b3a01;
+    align-items: center;
+    padding: 15px;
+    border-radius: 35px;
+    width: 100%;
+}
+
+.listaRedesContacto {
+    color: #6B3A01 !important;
+    background-color: #E6C595;
+    font-size: 28px;
+    width: max-content;
+    padding: 15px;
+}
+
+#divMainMe {
+    margin-top: 70px;
+    margin-bottom: 450px;
+    width: 80%;
+    height: max-content;
+    background-color: #6b3a011c;
+    align-items: center;
+    border-radius: 45px;
+}
+
+.divPuntoDeEncuentro {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    width: 90%;
+    height: max-content;
+    background-color: #E6C595;
+    text-align: start;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.titulosEntregasSt {
+    background-color: #E6C595;
+    padding: 10px;
+    font-size: 30px !important;
+    margin-top: 50px;
+    border-radius: 15px;
+    width: max-content;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.img-producto-principal {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.flecha-nav {
+    height: min-content;
+    position: absolute;
+    top: 50%;
+    transform: translateY(420%);
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #502f09;
+    border: none;
+    cursor: pointer;
+    font-size: 45px;
+}
+
+.flecha-nav:hover {
+    color: #E6C595;
+}
+
+.flecha-izq {
+    left: 5px;
+}
+
+.flecha-der {
+    right: 5px;
+}
+
+#tituloNosDiv {
+    width: 100%;
+    height: min-content;
+    margin-top: 350px;
+    text-align: center;
+}
+
+#tituloNos {
+    color: #6B3A01;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+/* Celulares (pantallas de tamaño chico) */
+@media (min-width: 0px) and (max-width: 760px) {
+    #redesNav {
+        /*
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 0px;
+        */
+        display: none;
+    }
+
+    .producto {
+        max-width: 325px;
+    }
+
+    .redesSociales {
+        width: 55px;
+        /* tamaño fijo para íconos */
+        height: auto;
+    }
+
+    #menuIconDiv {
+        display: flex;
+    }
+
+    #accesosNav {
+        display: none;
+    }
+
+    #logoCapiNav {
+        height: 100%;
+    }
+
+    #logoCapi {
+        height: 60%;
+        margin-top: 20%;
+    }
+
+    #logoTxt {
+        display: none;
+        /*
+        margin-top: 60px;
+        padding-right: 30px;
+        */
+    }
+
+    #mainDiv {
+        margin-top: 200px;
+        margin-bottom: 450px;
+    }
+
+    #tituloSlide {
+        font-size: 24px !important;
+        width: fit-content;
+        /* Título más chico en celular */
+        padding-top: 30px;
+    }
+
+    #textoFooter {
+        font-size: 24px;
+    }
+
+    #slideDiv {
+        width: 85%;
+        /* En celular ocupa casi todo el ancho */
+        border-radius: 30px;
+        margin-top: 150px;
+        margin-bottom: 400px;
+    }
+
+    #divSearch {
+        display: flex;
+    }
+
+    .item-categoria {
+        /* --- LA CLAVE PARA QUE NO SE CORTEN --- */
+        white-space: normal;
+        /* Permite que el texto largo use 2 renglones */
+        text-align: center;
+        /* Centra el texto si se divide en dos líneas */
+        max-width: 140px;
+        /* Limita el ancho para forzar el salto de línea en nombres largos */
+        line-height: 1.2;
+        /* Reduce el espacio entre renglones del mismo item */
+        font-size: 18px !important;
+        /* Un tamaño más manejable para celulares */
+    }
+
+    .item-categoria:hover {
+        /* --- LA CLAVE PARA QUE NO SE CORTEN --- */
+        white-space: normal;
+        /* Permite que el texto largo use 2 renglones */
+        text-align: center;
+        /* Centra el texto si se divide en dos líneas */
+        max-width: 140px;
+        /* Limita el ancho para forzar el salto de línea en nombres largos */
+        line-height: 1.2;
+        /* Reduce el espacio entre renglones del mismo item */
+        font-size: 18px !important;
+        /* Un tamaño más manejable para celulares */
+    }
+
+    #divControlesCategorias {
+        width: 100% !important;
+    }
+
+    #divCategorias {
+        width: 100% !important;
+        font-size: 15px !important;
+        margin-top: 50px;
+    }
+
+    #btnNextCategoria {
+        padding-top: 50px;
+    }
+
+    #btnPrevCategoria {
+        padding-top: 50px;
+    }
+
+    .imgSlide {
+        padding: 10px;
+        /* Menos padding en celular para que la foto se vea grande */
+        max-width: 100%;
+    }
+
+    #inputSearch {
+        font-size: 19px !important;
+    }
+
+    #inputSearch::placeholder {
+        font-size: 19px !important;
+    }
+
+    #divFiltrado {
+        flex-direction: column;
+    }
+
+    .radioInpsSt {
+        flex-direction: column;
+    }
+
+    #divCatalogo {
+        margin-top: 35px
+    }
+
+    #footer {
+        height: 375px;
+    }
+
+    #copyrightDiv {
+        height: max-content;
+        width: 85%;
+        flex-direction: column;
+    }
+
+    #toTopIcon {
+        bottom: 70px;
+        right: 50px;
+    }
+
+    .whatsapp-float {
+        display: none;
+    }
+
+    #mainDivNosotros {
+        flex-direction: column;
+    }
+
+    #divMainContacto {
+        margin-top: 350px;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #divContactoRedes {
+        width: 100%;
+        border-radius: 0px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .listaRedesContacto {
+        font-size: 26px;
+        color: #E6C595 !important;
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    #divMainMe {
+        margin-top: 800px;
+    }
+
+    .mobileEntregas {
+        width: 90%;
+    }
+
+    #divPuntoDeEncuentro {
+        width: 80%;
+    }
+
+    #tituloNosDiv {
+        margin-top: 300px;
+    }
+
+    #tituloNos {
+        font-size: 35px !important;
+        text-align: center;
+    }
+
+    #divMainMe {
+        margin-top: 100px;
+    }
+}
+
+/* columnas grid productos */
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    .productos {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 columnas */
+    }
+
+    .item-categoria {
+        /* --- LA CLAVE PARA QUE NO SE CORTEN --- */
+        white-space: normal;
+        /* Permite que el texto largo use 2 renglones */
+        text-align: center;
+        /* Centra el texto si se divide en dos líneas */
+        max-width: 140px;
+        /* Limita el ancho para forzar el salto de línea en nombres largos */
+        line-height: 1.2;
+        /* Reduce el espacio entre renglones del mismo item */
+        font-size: 18px !important;
+        /* Un tamaño más manejable para celulares */
+    }
+
+    .item-categoria:hover {
+        /* --- LA CLAVE PARA QUE NO SE CORTEN --- */
+        white-space: normal;
+        /* Permite que el texto largo use 2 renglones */
+        text-align: center;
+        /* Centra el texto si se divide en dos líneas */
+        max-width: 140px;
+        /* Limita el ancho para forzar el salto de línea en nombres largos */
+        line-height: 1.2;
+        /* Reduce el espacio entre renglones del mismo item */
+        font-size: 18px !important;
+        /* Un tamaño más manejable para celulares */
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas */
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 1650px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columnas */
+    }
+}
+
+@media (min-width: 1651px) {
+    .productos {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columnas */
+    }
+}
+
+
+/* Tablets (pantallas de tamaño medio) */
+@media (min-width: 761px) and (max-width: 1400px) {
+    #accesosNav {
+        display: none;
+    }
+
+    .producto {
+        max-width: 375px;
+    }
+
+    #redesNav {
+        /*
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 0px;
+        */
+        display: none;
+    }
+
+    .redesSociales {
+        width: 55px;
+        /* tamaño fijo para íconos */
+        height: auto;
+    }
+
+    #accesosNavMobile {
+        display: none;
+    }
+
+    #logoCapiNav {
+        height: 100%;
+    }
+
+    #mainDiv {
+        margin-top: 250px;
+    }
+
+    #divCatalogo {
+        margin-top: 35px
+    }
+
+    #divFiltrado {
+        flex-direction: column;
+    }
+
+    .radioInpsSt {
+        flex-direction: column;
+    }
+
+    #slideDiv {
+        margin-top: 150px;
+    }
+
+    #mainDivNosotros {
+        flex-direction: column;
+    }
+
+    #divMainContacto {
+        margin-top: 350px;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #divContactoRedes {
+        width: 60%;
+    }
+
+    .listaRedesContacto {
+        font-size: 28px;
+    }
+
+    #divMainMe {
+        margin-top: 800px;
+    }
+
+    #tituloNosDiv {
+        margin-top: 700px;
+    }
+
+    #tituloNos {
+        font-size: 40px !important;
+        text-align: center;
+    }
+
+    #divMainMe {
+        margin-top: 100px;
+    }
+
+    #menuIconDiv {
+        display: flex;
+    }
+}
+
+
+/* Pantallas grandes */
+@media (min-width: 1401px) {
+    #accesosNav {
+        display: flex;
+    }
+
+    .producto {
+        max-width: 375px;
+    }
+
+    #logoCapiNav {
+        height: 100%;
+    }
+
+    #menuIconDiv {
+        display: none;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+}
