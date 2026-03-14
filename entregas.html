@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MABARA - Entregas</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./css/media/logoFavicon.png" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bodyStyle" data-page="entregas" style="align-items: center;">
+    <header id="header">
+        <nav>
+            <div id="logoCapiNav">
+                <a href="/index.html">
+                    <img src="./css/media/logoCapi.png" alt="logoCapi" id="logoCapi">
+                </a>
+
+                <a href="/index.html">
+                    <img src="./css/media/logoTxt.png" alt="logoTxt" id="logoTxt">
+                </a>
+            </div>
+            <ul id="accesosNav">
+                <li>
+                    <a class="accesos" href="index.html" data-link="index">Inicio</a>
+                </li>
+                <li>
+                    <a class="accesos" href="entregas.html" data-link="entregas">Entregas</a>
+                </li>
+                <li>
+                    <a class="accesos" href="nosotros.html" data-link="nosotros">Nosotros</a>
+                </li>
+            </ul>
+            <ul target="_blank" aria-label="menuIcon" id="menuIconDiv">
+                <button data-bs-toggle="modal" data-bs-target="#modalMenu"
+                    style="background-color: transparent; border: transparent;">
+                    <span id="menuIcon" class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+            </ul>
+            <div id="redesNav">
+                <a id="logoWpp" style="font-size: small !important; margin-left: 25px;"
+                    href="https://api.whatsapp.com/send/?phone=5491126848312" target="_blank" rel="noopener noreferrer">
+                    <img src="./css/media/logoWpp.png" alt="whatsapp" class="redesSociales">
+                </a>
+                <a style="font-size: small !important;" href="https://www.instagram.com/mabara.ar" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./css/media/logoIg.png" alt="instagram" class="redesSociales">
+                </a>
+                <a style="font-size: small !important;" href="https://www.facebook.com/mabara.art" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./css/media/logoFb.png" alt="facebook" class="redesSociales"
+                        style="width: 65px; height: 55px;">
+                </a>
+                <a style="font-size: small !important;"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=mabara.contacto@gmail.com" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./css/media/logoMail.png" alt="gmail" class="redesSociales">
+                </a>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="modalMenu" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #CDAD7B;">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"
+                            style="font-family: 'Roboto Slab', serif; font-size: 28px !important; color: #6B3A01;">
+                            Menu</h1>
+                        <button data-bs-dismiss="modal" aria-label="Close"
+                            style="position: absolute; right: 0; cursor: pointer; background-color: transparent; border: transparent;">
+                            <span id="iconCloseModal" class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="accesosNavModal">
+                            <li style="padding: 20px;">
+                                <a class="accesos" href="index.html" data-link="index">Inicio</a>
+                            </li>
+                            <li style="padding: 20px;">
+                                <a class="accesos" href="entregas.html" data-link="entregas">Entregas</a>
+                            </li>
+                            <li style="padding: 20px;">
+                                <a class="accesos" href="nosotros.html" data-link="nosotros">Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button id="btnCloseModal" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="tituloNosDiv">
+        <h4 id="tituloNos" style="font-size: 45px">Nuestros métodos de entrega</h4>
+    </div>
+
+    <main id="divMainMe">
+
+        <h1 class="mobileEntregas titulosEntregasSt">
+            Puntos de encuentro:</h1>
+        <div class="divPuntoDeEncuentro">
+            <h3 style="color: #6B3A01;">Realizamos puntos de encuentro dentro de Zona Oeste sin cargo,<br>Algunos de
+                estos pueden ser;</h3>
+            <ul style="font-size: 25px; font-weight: 500 !important;">
+                <li>- Shopping Plaza Oeste.</li>
+                <li>- Moron (puntos centricos).</li>
+                <li>- Hurlingham (puntos centricos).</li>
+                <li>- Estaciones linea Urquiza o San Martin.</li>
+            </ul>
+        </div>
+
+        <h1 class="mobileEntregas titulosEntregasSt">
+            Puntos de entrega lejanos:</h1>
+        <div class="divPuntoDeEncuentro">
+            <h3 style="color: #6B3A01;">Dependiendo del lugar se puede realizar un punto de encuentro fuera del area
+                común de entrega (Zona Oeste), en estos casos dependiendo del lugar de entrega se va a agregar al total
+                un monto igual o superior a $5000.</h3>
+        </div>
+
+        <h1 class="mobileEntregas titulosEntregasSt">
+            Envio a domicilio o sucursal de correo:</h1>
+        <div class="divPuntoDeEncuentro" style="margin-bottom: 50px;">
+            <h3 style="color: #6B3A01;">Si se acuerda esta opción se gestiona el envio mediante Mercado Libre<br>(con
+                una publicación unica para el pedido) o también realizamos el envio con Correo Argentino.</h3>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <div id="copyrightDiv">
+            <h1 style="width: 100%; padding: 15px; font-size: 28px !important;">Copyright © 2026 
+                MABARA<br>Diseño:<a style="font-size: 28px !important; text-decoration: underline !important;" href="https://www.instagram.com/revie.dg" target="_blank" rel="noopener noreferrer">@revie.dg</a></h1>
+            <div style="display: inline-flex; padding-right: 60px;">
+                <a href="https://api.whatsapp.com/send/?phone=5491126848312" target="_blank" rel="noopener noreferrer">
+                    <img class="redesSociales" src="./css/media/logoWpp.png" alt="WhatsApp_logo"
+                        style="width: 50px; height: 50px; margin-bottom: 45px;">
+                </a>
+                <a href="https://www.instagram.com/mabara.ar" target="_blank" rel="noopener noreferrer">
+                    <img class="redesSociales" src="./css/media/logoIg.png" alt="instagram_logo"
+                        style="width: 60px; height: 55px; padding-left: 10px; margin-bottom: 45px;">
+                </a>
+                <a href="https://www.facebook.com/mabara.art" target="_blank" rel="noopener noreferrer">
+                    <img class="redesSociales" src="./css/media/logoFb.png" alt="facebook_logo"
+                        style="width: 65px; height: 55px; margin-bottom: 45px;">
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mabara.contacto@gmail.com" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="redesSociales" src="./css/media/logoMail.png" alt="mail_logo"
+                        style="width: 50px; height: 50px; padding-top: 10px; margin-bottom: 45px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <a id="wpp" href="https://api.whatsapp.com/send/?phone=5491126848312&text&type=phone_number&app_absent=0"
+        class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+        <img src="./css/media/logoWppFixed.png" alt="WhatsApp" loading="lazy">
+    </a>
+
+    <a target="_blank" aria-label="toTopIcon">
+        <span id="toTopIcon" class="material-symbols-outlined toTopIcon">
+            arrow_upward
+        </span>
+    </a>
+
+    <script src="./code.js"></script>
+</body>
+
+</html>
