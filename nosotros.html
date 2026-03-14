@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MABARA - Nosotros</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./css/media/logoFavicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bodyStyle" data-page="nosotros">
+    <header id="header">
+        <nav>
+            <div id="logoCapiNav">
+                <a href="/index.html">
+                    <img src="./css/media/logoCapi.png" alt="logoCapi" id="logoCapi">
+                </a>
+
+                <a href="/index.html">
+                    <img src="./css/media/logoTxt.png" alt="logoTxt" id="logoTxt">
+                </a>
+            </div>
+            <ul id="accesosNav">
+                <li>
+                    <a class="accesos" href="index.html" data-link="index">Inicio</a>
+                </li>
+                <li>
+                    <a class="accesos" href="entregas.html" data-link="entregas">Entregas</a>
+                </li>
+                <li>
+                    <a class="accesos" href="nosotros.html" data-link="nosotros">Nosotros</a>
+                </li>
+            </ul>
+            <ul target="_blank" aria-label="menuIcon" id="menuIconDiv">
+                <button data-bs-toggle="modal" data-bs-target="#modalMenu"
+                    style="background-color: transparent; border: transparent;">
+                    <span id="menuIcon" class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+            </ul>
+            <div id="redesNav">
+                <a id="logoWpp" style="font-size: small !important; margin-left: 25px;"
+                    href="https://api.whatsapp.com/send/?phone=5491126848312" target="_blank" rel="noopener noreferrer">
+                    <img src="./css/media/logoWpp.png" alt="whatsapp" class="redesSociales">
+                </a>
+                <a style="font-size: small !important;" href="https://www.instagram.com/mabara.ar" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./css/media/logoIg.png" alt="instagram" class="redesSociales">
+                </a>
+                <a style="font-size: small !important;" href="https://www.facebook.com/mabara.art" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./css/media/logoFb.png" alt="facebook" class="redesSociales"
+                        style="width: 65px; height: 55px;">
+                </a>
+                <a style="font-size: small !important;"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=mabara.contacto@gmail.com" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./css/media/logoMail.png" alt="gmail" class="redesSociales">
+                </a>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="modalMenu" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #CDAD7B;">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"
+                            style="font-family: 'Roboto Slab', serif; font-size: 28px !important; color: #6B3A01;">
+                            Menu</h1>
+                        <button data-bs-dismiss="modal" aria-label="Close"
+                            style="position: absolute; right: 0; cursor: pointer; background-color: transparent; border: transparent;">
+                            <span id="iconCloseModal" class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="accesosNavModal">
+                            <li style="padding: 20px;">
+                                <a class="accesos" href="index.html" data-link="index">Inicio</a>
+                            </li>
+                            <li style="padding: 20px;">
+                                <a class="accesos" href="entregas.html" data-link="entregas">Entregas</a>
+                            </li>
+                            <li style="padding: 20px;">
+                                <a class="accesos" href="nosotros.html" data-link="nosotros">Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button id="btnCloseModal" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="mainDivNosotros">
+
+        <div id="divMainContacto">
+            <div style="display: flex; flex-direction: column; align-items: center; width: 90%;">
+                <h1 style="font-size: 38px !important; font-weight: 800 !important;">Somos MABARA!</h1>
+                <h3 style="font-size: 22px; color: #6B3A01;">Realizamos cortes y grabados laser en diferentes
+                    materiales,
+                    diseñamos y hacemos todo tipo de artesanías personalizadas.</h3>
+            </div>
+
+            <div id="divContactoRedes">
+                <h1 style="color: #E6C595 !important;">Contactanos!</h1>
+                <ul id="divRedesContactoLista">
+                    <li style="padding-top: 15px; padding-bottom: 15px;">
+                        <a class="listaRedesContacto">Whatsapp: 1126848312</a>
+                    </li>
+                    <li style="padding-top: 15px; padding-bottom: 15px;">
+                        <a class="listaRedesContacto">Instagram: @mabara.ar</a>
+                    </li>
+                    <li style="padding-top: 15px; padding-bottom: 15px;">
+                        <a class="listaRedesContacto">Facebook: mabara.art</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <article id="slideDiv">
+            <h1 id="tituloSlide">Mira algunos de nuestros trabajos!</h1>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner imgTxt">
+                    <div class="carousel-item active" data-titulo="Reloj personalizado - Italian Gym">
+                        <img src="./css/media/productos/reloj gym italian.jpg" class="d-block w-100 imgSlide"
+                            alt="reloj-italian-gym">
+                    </div>
+                    <div class="carousel-item" data-titulo="Reloj tematico - Buho">
+                        <img src="./css/media/productos/reloj buho.png" class="d-block w-100 imgSlide"
+                            alt="reloj-buho">
+                    </div>
+                    <div class="carousel-item" data-titulo="Reloj personalizado con nombre - River Plate">
+                        <img src="./css/media/productos/relojRiver/relojPersoRiver.jpeg" class="d-block w-100 imgSlide"
+                            alt="reloj-river">
+                    </div>
+                    <div class="carousel-item" data-titulo="Colgante - Fases lunares">
+                        <img src="./css/media/productos/colganteLunar/colganteluna1.png" class="d-block w-100 imgSlide"
+                            alt="colgante-fases-lunares">
+                    </div>
+                    <div class="carousel-item" data-titulo="Reloj tematico - Rock nacional">
+                        <img src="./css/media/productos/relojRock/1.jpg" class="d-block w-100 imgSlide"
+                            alt="reloj-rock-nacional">
+                    </div>
+                    <div class="carousel-item" data-titulo="Reloj personalizado - Z Gym">
+                        <img src="./css/media/productos/reloj gym z.jpg" class="d-block w-100 imgSlide"
+                            alt="reloj-gym-z">
+                    </div>
+                    <div class="carousel-item" data-titulo="Souvenir personalizado - Regalo para mamá">
+                        <img src="./css/media/productos/decoracion bebe.jpg" class="d-block w-100 imgSlide"
+                            alt="reloj-gym-z">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h3 id="textoFooter">Reloj personalizado - Italian Gym</h3>
+        </article>
+    </main>
+
+    <footer id="footer">
+        <div id="copyrightDiv">
+            <h1 style="width: 100%; padding: 15px; font-size: 28px !important;">Copyright © 2025
+                MABARA<br>Diseño:<a style="font-size: 28px !important; text-decoration: underline !important;"
+                    href="https://www.instagram.com/revie.dg" target="_blank" rel="noopener noreferrer">@revie.dg</a>
+            </h1>
+            <div style="display: inline-flex; padding-right: 60px;">
+                <a href="https://api.whatsapp.com/send/?phone=5491126848312" target="_blank" rel="noopener noreferrer">
+                    <img class="redesSociales" src="./css/media/logoWpp.png" alt="WhatsApp_logo"
+                        style="width: 50px; height: 50px; margin-bottom: 45px;">
+                </a>
+                <a href="https://www.instagram.com/mabara.ar" target="_blank" rel="noopener noreferrer">
+                    <img class="redesSociales" src="./css/media/logoIg.png" alt="instagram_logo"
+                        style="width: 60px; height: 55px; padding-left: 10px; margin-bottom: 45px;">
+                </a>
+                <a href="https://www.facebook.com/mabara.art" target="_blank" rel="noopener noreferrer">
+                    <img class="redesSociales" src="./css/media/logoFb.png" alt="facebook_logo"
+                        style="width: 65px; height: 55px; margin-bottom: 45px;">
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mabara.contacto@gmail.com" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="redesSociales" src="./css/media/logoMail.png" alt="mail_logo"
+                        style="width: 50px; height: 50px; padding-top: 10px; margin-bottom: 45px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <a id="wpp" href="https://api.whatsapp.com/send/?phone=5491126848312&text&type=phone_number&app_absent=0"
+        class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+        <img src="./css/media/logoWppFixed.png" alt="WhatsApp" loading="lazy">
+    </a>
+
+    <a target="_blank" aria-label="toTopIcon">
+        <span id="toTopIcon" class="material-symbols-outlined toTopIcon">
+            arrow_upward
+        </span>
+    </a>
+
+    <script src="./code.js"></script>
+
+</body>
+
+</html>
