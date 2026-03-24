@@ -413,7 +413,7 @@ function actualizarLink() {
     if (btn) {
       const nombreProducto = btn.dataset.nombre;
 
-      if (ancho < 1600) {
+      if (ancho < 1001) {
         btn.href = linkMailTo(nombreProducto);
       } else {
         btn.href = linkMail(nombreProducto);
