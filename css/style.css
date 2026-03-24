@@ -243,7 +243,11 @@ h1 {
     object-fit: contain;
     /* Asegura que se vea la foto entera */
     margin: 0 auto;
+    /* Centrar */
+    padding: 20px;
     /* Padding más moderado */
+    border-radius: 60px !important;
+    /* Bordes un poco redondeados a la foto */
     padding: 70px;
 }
 
@@ -912,18 +916,6 @@ h1 {
     font-weight: 600;
 }
 
-#modalDiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-#modalMenu{
-    width: 85%;
-    margin-left: 7%;
-}
-
 /* Celulares (pantallas de tamaño chico) */
 @media (min-width: 0px) and (max-width: 760px) {
     #redesNav {
@@ -1084,20 +1076,12 @@ h1 {
     }
 
     #toTopIcon {
-        bottom: 130px;
-        right: 30px;
+        bottom: 70px;
+        right: 50px;
     }
 
     .whatsapp-float {
-        display: flex;
-        right: 25px;
-        width: 70px;
-        height: 80px;
-    }
-
-    .whatsapp-float img{
-        width: 110px;
-        height: 110px;
+        display: none;
     }
 
     #mainDivNosotros {
@@ -1141,7 +1125,7 @@ h1 {
     }
 
     #tituloNos {
-        font-size: 35px !important;
+        font-size: 32px !important;
         text-align: center;
     }
 
@@ -1288,7 +1272,7 @@ h1 {
     }
 
     #tituloNosDiv {
-        margin-top: 700px;
+        margin-top: 350px;
     }
 
     #tituloNos {
@@ -1304,7 +1288,6 @@ h1 {
         display: flex;
     }
 }
-
 
 
 /* Pantallas grandes */
